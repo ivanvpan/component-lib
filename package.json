@@ -34,6 +34,10 @@
   "module": "dist/component-lib.esm.js",
   "devDependencies": {
     "@babel/core": "^7.8.3",
+    "@babel/preset-react": "^7.8.3",
+    "@emotion/babel-preset-css-prop": "^10.0.27",
+    "@emotion/core": "^10.0.27",
+    "@emotion/styled": "^10.0.27",
     "@storybook/addon-actions": "^5.3.9",
     "@storybook/addon-links": "^5.3.9",
     "@storybook/addons": "^5.3.9",
@@ -45,6 +49,7 @@
     "husky": "^4.2.1",
     "react": "^16.12.0",
     "react-dom": "^16.12.0",
+    "styled-components": "^5.0.0",
     "ts-loader": "^6.2.1",
     "tsdx": "^0.12.3",
     "tslib": "^1.10.0",
