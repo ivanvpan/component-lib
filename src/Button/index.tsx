@@ -43,13 +43,19 @@ const Button = ({ buttonType: type = 'default', ...props }: IButtonProps) => {
   const appearance = buttonAppearances[type];
   const style = css`
     background-color: ${appearance.backgroundColor};
+    border-radius: 3px;
+    color: ${appearance.color};
+    cursor: pointer;
+    display: inline-block;
+    font-family: sans-serif;
+    padding: 4px 10px;
   `;
   //return <button onClick={props.onClick} {...appearance}>{props.children}</StyledButton>
 
   return (
-    <button onClick={props.onClick} css={style}>
+    <div onClick={props.onClick} css={style}>
       {props.children}
-    </button>
+    </div>
   );
 };
 
